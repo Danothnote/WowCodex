@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
 body {
-    background-color: #383858;
+  background-image: url("src/assets/Texture.webp");
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000101, #0a6576);
+    opacity: 0.4;
+    z-index: -1;
+  }
 }
